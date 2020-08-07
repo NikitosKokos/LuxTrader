@@ -1,0 +1,15 @@
+@import './base/variables';
+@import './base/mixins';
+@import './base/fonts';
+@import './base/zeroing';
+@import './base/media';
+
+@import './blocks/header';
+
+
+._container{
+    max-width: $container + 30px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+

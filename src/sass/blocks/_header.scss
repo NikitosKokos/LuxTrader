@@ -1,0 +1,156 @@
+.header{
+    background-color: $blue;
+    height: 75px;
+    &__container{
+        position: relative;
+        height: 75px;
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+    }
+    &__menu {
+        flex: 1 1 auto;
+    }
+    .menu {
+        &__icon {
+        }
+        &__body {
+        }
+        &__list {
+            display: flex;
+            justify-content: center;
+            li{
+                margin: 0 15px;
+            }
+        }
+        &__link {
+            color: $white;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            font-family: 'PFDin';
+            @media (min-width: 992px){
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: #ba9f6f;
+                }
+             }
+        }
+    }
+    
+    &__actions {
+    }
+    .actions-header {
+        display: flex;
+        align-items: center;
+            &__rogion {
+                @extend .menu__link;
+                padding: 0 0 0 30px;
+                line-height: 18px;
+                background: url('../img/icons/header/world.png') left no-repeat;
+            }
+            &__user {
+                margin: 0 0 0 30px;
+            }
+    }
+
+    .user-header {
+        &__icon {
+            cursor: pointer;
+        }
+        &__menu {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            transition: all .3s ease-in-out;
+            top: 88px;
+            right: 0;
+            padding: 20px;
+            background-color: $blue;
+            li{
+                margin: 0 0 8px 0;
+                &:last-child{
+                    margin: 0;
+                }
+            }
+            &_active{
+                opacity: 1;
+                visibility: visible;
+                top: 78px;
+            }
+        }
+        &__link {
+            color: $white;
+            display: inline-block;
+            padding: 0 0 0 30px;
+            line-height: 18px;
+            &_1 {
+            background: url('../img/icons/header/01.png') 1px center no-repeat;
+            }
+            &_2 {
+                background: url('../img/icons/header/02.png') left center no-repeat;
+            }
+            &_3 {
+                background: url('../img/icons/header/03.png') 4px center no-repeat;
+            }
+            &_4 {
+                background: url('../img/icons/header/04.png') left center no-repeat;
+            }
+            @media (min-width: 992px){
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: #ba9f6f;
+                }
+             }
+        }
+        
+    }
+    
+    .menu{
+        padding: 0 0 0 30px/950px * 100%;
+        &__icon{
+            display: none;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            z-index: 3;
+             span,
+             span::before,
+             span::after {
+                position: absolute;
+                top: 50%; margin-top: -1px;
+                left: 50%; margin-left: -10px;
+                width: 20px;
+                height: 2px;
+                background-color: #222;
+            }
+               span::before,
+               span::after {
+                    content: '';
+                    display: block;
+                    transition: 0.2s;
+                }
+                span::before {
+                    transform: translateY(-5px);
+                }
+                &_active span {
+                    height: 0;
+                }
+                 span::after {
+                    transform: translateY(5px);
+                }
+                
+                &_active span:before {
+                    transform: rotate(-45deg);
+                    transform-origin: center;
+                }
+                &_active span:after {
+                    transform: rotate(45deg);
+                    transform-origin: center;
+                }
+        }
+    }
+}
+
+
+  
