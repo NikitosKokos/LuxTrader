@@ -425,6 +425,10 @@ h6 {
   }
 }
 
+.title {
+  text-align: center;
+}
+
 .title__item {
   font-family: 'ceremonious';
   color: #bb9c66;
@@ -453,6 +457,7 @@ h6 {
 .btn {
   position: relative;
   display: inline-block;
+  color: #fff;
 }
 
 .btn::before,
@@ -497,14 +502,13 @@ h6 {
 .btn__body span {
   min-height: 50px;
   padding: 0 50px;
-  color: #fff;
   text-transform: uppercase;
   font-size: 15px;
   font-family: 'PFDin';
   letter-spacing: 2px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -528,6 +532,418 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.btn_big .btn__body span {
+  font-size: 21px;
+  color: #111;
+  padding: 0 10px;
+}
+
+.lots {
+  padding: 85px 0 63px 0;
+}
+
+.lots__header {
+  margin: 0 0 40px 0;
+}
+
+.slider-lots__body {
+  margin: 0 -50px 50px;
+  overflow-x: hidden;
+}
+
+.slider-lots__slide {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.lot {
+  padding: 0 50px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+.lot__header {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+  position: relative;
+}
+
+.lot__image {
+  display: block;
+  padding: 0px 0px 98% 0px;
+  border: 2px solid #bb9c66;
+}
+
+.lot__title {
+  color: #000000;
+  font-family: "PFDin";
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: calc(25 / 21);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+  z-index: 2;
+  margin: 0px 0px 1.28571em 0px;
+}
+
+.lot__btn {
+  margin: 0 25px;
+}
+
+.info-lot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 35px 0px;
+}
+
+.info-lot__statistic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.info-lot__icon {
+  width: 18px;
+  height: 18px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 auto 10px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.info-lot__icon img {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-lot__icon:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #111;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-lot__value {
+  font-size: 14px;
+  border-bottom: 1px solid #bb9c66;
+  padding: 0px 0px 5px 0px;
+}
+
+.info-lot__current-bet {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.current-bet-info-lot {
+  position: relative;
+  padding: 0 5px;
+}
+
+.current-bet-info-lot:after {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border: 1px solid #bb9c66;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.current-bet-info-lot div {
+  position: relative;
+  z-index: 2;
+}
+
+.current-bet-info-lot__label {
+  margin: 0px 0px 5px 0px;
+}
+
+.current-bet-info-lot__value {
+  font-family: "BravoRGRegular";
+  font-size: 50px;
+  white-space: nowrap;
+}
+
+.timer-lot {
+  width: 72px;
+  height: 72px;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px 0px 0px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+.timer-lot div {
+  position: relative;
+  z-index: 2;
+}
+
+.timer-lot:before {
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.timer-lot__icon {
+  margin: 0px 0px 2px 0px;
+}
+
+.control-slider-lots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.control-slider-lots__arrow {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.control-slider-lots__arrow span {
+  width: 108px;
+  height: 35px;
+  background: url("../../img/icons/lots-prev.svg") left no-repeat;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 108px;
+          flex: 0 0 108px;
+  overflow: hidden;
+}
+
+.control-slider-lots__arrow::after {
+  content: "";
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #bb9c66;
+}
+
+.control-slider-lots__arrow:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.control-slider-lots__arrow:last-child span {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.control-slider-lots__link {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  height: 100px;
+  background: url("../../img/circle.png") 0 0 no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  font-family: "PFDin";
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+.block-header__title {
+  margin: 0 0 20px 0;
+}
+
+.block-decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-decor__items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-decor__items::before {
+  content: "";
+  height: 2px;
+  background: #bb9c66;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.block-decor__items::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 2px solid #bb9c66;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 0 7px;
+}
+
+.block-decor__items span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px;
+}
+
+.block-decor__items span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #bb9c66;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+.block-decor__items span::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid #bb9c66;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.block-decor__items:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.block-decor__items:last-child span {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.block-decor__icon {
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 145px;
+          flex: 0 0 145px;
+}
+
+.block-decor__icon img {
+  max-width: 100%;
 }
 
 .wrapper {
@@ -578,6 +994,40 @@ body._hidden {
   .btn:hover .btn__body span::after {
     opacity: .3;
     height: 100%;
+    font-weight: 500;
+    letter-spacing: 0px;
+  }
+
+  .lot__title {
+    font-size: 18px;
+  }
+
+  .info-lot__statistic:hover .info-lot__icon:after {
+    background: #bb9c66;
+  }
+
+  .current-bet-info-lot__value {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-lots__body {
+    margin: 0 -15px 50px;
+  }
+
+  .lot {
+    padding: 0 15px;
+  }
+
+  .info-lot__current-bet {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+
+  .current-bet-info-lot {
+    padding: 0 10px;
   }
 }
 
@@ -748,6 +1198,20 @@ body._hidden {
   .title__main {
     font-size: 30px;
   }
+
+  .block-decor__icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95px;
+            flex: 0 0 95px;
+  }
+}
+
+@media (max-width: 450px) {
+  .control-slider-lots__arrow span {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+            flex: 0 0 50px;
+  }
 }
 
 .webp .header .actions-header__rogion{ background: url(../img/icons/header/world.webp) left no-repeat; }
@@ -763,3 +1227,5 @@ body._hidden {
 .webp .control-main-slider__arrow_prev{ background: url(../img/icons/prev.webp) 0 0 no-repeat; }
 
 .webp .control-main-slider__arrow_next{ background: url(../img/icons/next.webp) 0 0 no-repeat; }
+
+.webp .control-slider-lots__link{ background: url(../../img/circle.webp) 0 0 no-repeat; }
