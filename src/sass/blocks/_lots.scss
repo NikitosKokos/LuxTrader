@@ -194,7 +194,7 @@
     span {
       width: 108px;
       height: 35px;
-      background: url("../../img/icons/lots-prev.svg") left no-repeat;
+      background: url("../img/icons/lots-prev.svg") left no-repeat;
       flex: 0 0 108px;
       overflow: hidden;
       @media (max-width: 450px) {
@@ -219,7 +219,7 @@
   &__link {
     flex: 0 0 100px;
     height: 100px;
-    background: url("../../img/circle.png") 0 0 no-repeat;
+    background: url("../img/circle.png") 0 0 no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;

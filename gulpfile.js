@@ -2,7 +2,7 @@ const project_folder = "dist";
 const source_folder = "src";
 
 let fs = require('fs');
-
+ 
 let path= {
     build:{
         html: `${project_folder}/`,

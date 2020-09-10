@@ -252,3 +252,43 @@ let lotsSlider = new Swiper(".slider-lots__body", {
     },
   },
 });
+// slider-quotes__body
+let quotesSlider = new Swiper(".slider-quotes__body", {
+  // direction: 'vertical',
+  effect: "fade",
+  loop: true,
+  speed: 800,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  observer: true,
+  observerParents: true,
+  navigation: {
+    nextEl: ".control-slider-quotes__circle",
+  },
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   550: {
+  //     slidesPerView: 2,
+  //   },
+  //   768: {
+  //     slidesPerView: 3,
+  //   },
+  // },
+});
+
+// let linksNav = document.querySelectorAll(".menu__link");
+
+// linksNav.forEach((element) => {
+//   element.addEventListener("click", function (e) {
+//     e.preventDefault();
+
+//     const blockID = element.getAttribute("href").substr(1);
+
+//     document.getElementById(blockID).scrollIntoView({
+//       behavior: "smooth",
+//       block: "end",
+//     });
+//   });
+// });
